@@ -44,7 +44,7 @@ CREATE TABLE Books (
     Title VARCHAR(100),
     AuthorID INT,
     Price DECIMAL(10,2),
-    YearPublished YEAR,
+    YearPublished INT, -- Changed from YEAR to INT
     FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
 );
 ```
@@ -60,6 +60,40 @@ CREATE TABLE Sales (
     FOREIGN KEY (BookID) REFERENCES Books(BookID)
 );
 ```
+Insert Data
+
+Let's insert some sample data into these tables.
+
+Insert Authors
+
+sql
+Copy code
+INSERT INTO Authors (AuthorID, Name, Country) VALUES
+(1, 'George Orwell', 'United Kingdom'),
+(2, 'J.K. Rowling', 'United Kingdom'),
+(3, 'Harper Lee', 'United States');
+
+Insert Books
+
+sql
+Copy code
+INSERT INTO Books (BookID, Title, AuthorID, Price, YearPublished) VALUES
+(1, '1984', 1, 8.99, '1949'),
+(2, 'Animal Farm', 1, 6.99, '1945'),
+(3, 'Harry Potter and the Sorcerer''s Stone', 2, 10.99, '1997'),
+(4, 'To Kill a Mockingbird', 3, 7.99, '1960');
+
+Insert Sales
+
+sql
+Copy code
+INSERT INTO Sales (SaleID, BookID, QuantitySold, SaleDate) VALUES
+(1, 1, 500, '2023-01-01'),
+(2, 2, 300, '2023-02-01'),
+(3, 3, 800, '2023-03-01'),
+(4, 4, 400, '2023-04-01');
+
+![image](https://github.com/luiscoco/SQL-Commands/assets/32194879/f8821aad-e698-42ea-9ce7-1796aa586c4b)
 
 
 ## 2. SQL commands samples
