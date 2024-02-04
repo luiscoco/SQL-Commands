@@ -1,4 +1,4 @@
-# SQL Commands explanation with samples
+# Learn SQL commands with sample queries
 
 ## 1. Prerequisites
 
