@@ -104,4 +104,7 @@ We can see the tables relation in the following diagram
 ## 2. SQL commands samples
 
 
-### 2.1. 
+### 2.1. SQL JOINS
+
+![image](https://github.com/luiscoco/SQL-Commands/assets/32194879/640d6a46-3603-4cd4-baf9-6287ab0e42f7)
+
